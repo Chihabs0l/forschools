@@ -7,6 +7,10 @@ const { urlencoded } = require('express')
 const app = express()
 const bodyParser = require('body-parser')
 
+const functions = require('./functions/fun')
+
+functions.handler.readData('https://www.youtube.com')
+
 //read data function
 function readData(filepath , cb) {
     fs.readFile(filepath , 'utf-8', (err , fileData) => {
