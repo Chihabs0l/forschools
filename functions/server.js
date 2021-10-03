@@ -39,7 +39,7 @@ function insertMain(path , data) {
 }
 
 
-readData('./data/test.json' , (err , res) => {
+readData('../data/test.json' , (err , res) => {
     if(res) {
     let datadeletearray = []
 
@@ -76,7 +76,7 @@ app.use(express.static('../'))
 
 
 function insertToDataFile1() {
-    let jsonpath = './data/kunu.json'
+    let jsonpath = '../data/kunu.json'
     readData(jsonpath , (req , data) => {
         if(data) {
             const urlencodedParser = bodyParser.urlencoded({extended:false})
@@ -170,7 +170,7 @@ function deleteFromFileData() {
         let selectObj = `${req.body.select1}`
         let inputObj = `${req.body.userinput1}`
         res.json(req.body)
-        readData('./data/tablo.json' , (err , res) => {
+        readData('../data/tablo.json' , (err , res) => {
             if(res) {
                 res['dersler'][selectObj].forEach(element => {
                     if(element == inputObj) {
@@ -193,7 +193,7 @@ function deleteFromFileData() {
 
 
 function insertToDataFile() {
-    let jsonpath = './data/tablo.json'
+    let jsonpath = '../data/tablo.json'
     readData(jsonpath , (req , data) => {
         if(data) {
             const urlencodedParser = bodyParser.urlencoded({extended:false})
@@ -228,7 +228,7 @@ function insertToDataFile() {
 //Insert Syfa overe here
 function insertSyfa() {
 
-    let jsonpath = './data/sayfa.json'
+    let jsonpath = '../data/sayfa.json'
 
     const urlencodedParser = bodyParser.urlencoded({extended:false})
 
