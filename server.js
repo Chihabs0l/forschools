@@ -8,9 +8,6 @@ const { urlencoded } = require('express')
 const app = express()
 const bodyParser = require('body-parser')
 
-const functions = require('./fun')
-
-console.log(functions.handler.readData , 'is a eexternl function!')
 
 //read data function
 function readData(filepath , cb) {
@@ -39,7 +36,7 @@ function insertMain(path , data) {
 }
 
 
-readData('./functions/data/test.json' , (err , res) => {
+readData('./data/test.json' , (err , res) => {
     if(res) {
     let datadeletearray = []
 
@@ -65,7 +62,7 @@ readData('./functions/data/test.json' , (err , res) => {
 })
 
 
-app.use(express.static('../'))
+app.use(express.static('./'))
 
 
 
@@ -76,7 +73,7 @@ app.use(express.static('../'))
 
 
 function insertToDataFile1() {
-    let jsonpath = './functions/data/kunu.json'
+    let jsonpath = './data/kunu.json'
     readData(jsonpath , (req , data) => {
         if(data) {
             const urlencodedParser = bodyParser.urlencoded({extended:false})
@@ -132,7 +129,7 @@ function insertToDataFile1() {
                         break;
                     }
                     res.writeHead(200, {'Content-type':'text/html'});
-                    fs.readFile('../index.html', null, (err , data) => {
+                    fs.readFile('./index.html', null, (err , data) => {
                         if(err) {
                             res.writeHead(404)
                             res.write('File not found!')
@@ -170,7 +167,7 @@ function deleteFromFileData() {
         let selectObj = `${req.body.select1}`
         let inputObj = `${req.body.userinput1}`
         res.json(req.body)
-        readData('./functions/data/tablo.json' , (err , res) => {
+        readData('./data/tablo.json' , (err , res) => {
             if(res) {
                 res['dersler'][selectObj].forEach(element => {
                     if(element == inputObj) {
@@ -193,7 +190,7 @@ function deleteFromFileData() {
 
 
 function insertToDataFile() {
-    let jsonpath = './functions/data/tablo.json'
+    let jsonpath = './data/tablo.json'
     readData(jsonpath , (req , data) => {
         if(data) {
             const urlencodedParser = bodyParser.urlencoded({extended:false})
@@ -207,7 +204,7 @@ function insertToDataFile() {
                     data['dersler'][newObj].push(element)
                 });
                 res.writeHead(200, {'Content-type':'text/html'});
-                fs.readFile('../index.html', null, (err , data) => {
+                fs.readFile('./index.html', null, (err , data) => {
                     if(err) {
                         res.writeHead(404)
                         res.write('File not found!')
@@ -228,7 +225,7 @@ function insertToDataFile() {
 //Insert Syfa overe here
 function insertSyfa() {
 
-    let jsonpath = './functions/data/sayfa.json'
+    let jsonpath = './data/sayfa.json'
 
     const urlencodedParser = bodyParser.urlencoded({extended:false})
 
@@ -243,7 +240,7 @@ function insertSyfa() {
                     data['dersler'][select1Obj].push(element)
                 })
                 res.writeHead(200, {'Content-type':'text/html'});
-                fs.readFile('../index.html', null, (err , data) => {
+                fs.readFile('./index.html', null, (err , data) => {
                     if(err) {
                         res.writeHead(404)
                         res.write('File not found!')
@@ -276,4 +273,4 @@ insertSyfa()
 insertToDataFile1()
 insertToDataFile()
 
-app.listen(3000)
+app.listen(process.env.PORT || 3000)
