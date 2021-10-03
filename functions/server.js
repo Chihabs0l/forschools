@@ -1,15 +1,16 @@
 require('dotenv').config()
 const fs = require('fs')
 
+
 const express = require('express')
 const { url } = require('inspector')
 const { urlencoded } = require('express')
 const app = express()
 const bodyParser = require('body-parser')
 
-const functions = require('./functions/fun')
+const functions = require('./fun')
 
-functions.handler.readData('https://www.youtube.com')
+console.log(functions.handler.readData , 'is a eexternl function!')
 
 //read data function
 function readData(filepath , cb) {
@@ -64,7 +65,7 @@ readData('./data/test.json' , (err , res) => {
 })
 
 
-app.use(express.static('./'))
+app.use(express.static('../'))
 
 
 
@@ -206,7 +207,7 @@ function insertToDataFile() {
                     data['dersler'][newObj].push(element)
                 });
                 res.writeHead(200, {'Content-type':'text/html'});
-                fs.readFile('./index.html', null, (err , data) => {
+                fs.readFile('../index.html', null, (err , data) => {
                     if(err) {
                         res.writeHead(404)
                         res.write('File not found!')
@@ -242,7 +243,7 @@ function insertSyfa() {
                     data['dersler'][select1Obj].push(element)
                 })
                 res.writeHead(200, {'Content-type':'text/html'});
-                fs.readFile('./index.html', null, (err , data) => {
+                fs.readFile('../index.html', null, (err , data) => {
                     if(err) {
                         res.writeHead(404)
                         res.write('File not found!')
