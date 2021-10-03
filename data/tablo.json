@@ -1,0 +1,38 @@
+{
+    "dersler": {
+        "Kuran": [
+            "hucarat suresi"
+        ],
+        "Hitabet": [],
+        "Akaid": [],
+        "Arapca": [],
+        "Tefsir": [],
+        "Ingilizce": [
+            "affirmative tablosu"
+        ],
+        "Kimya": [
+            "periyodik tablosu",
+            "manyetik kuantum tablosu",
+            "peryodik blok tablosu"
+        ],
+        "Tarih": [],
+        "Turkce": [
+            "edebi akimlarin ve nezaman olunu ve anlamlarinin ve donemindeki yazarlar tablosu"
+        ],
+        "Biyoloji": [
+            "axon resmi tablosu",
+            "sinir sistemi tablosu",
+            "beyin parcalari ve islemleri"
+        ],
+        "Fizik": [],
+        "Matematik": [
+            "funksiyonlari",
+            "birim camber tablosu",
+            "formuler // yazicam"
+        ],
+        "Felsefe": [
+            "mo 6-ms 2.yuzyil filozoflari tablosu",
+            "filozolarin dogdu yeri ve soylediklerinin ve kendi itkadleri tablosu"
+        ]
+    }
+}

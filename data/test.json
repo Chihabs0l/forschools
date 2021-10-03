@@ -1,0 +1,17 @@
+{
+    "dersler":{
+        "Kuran":["516", "text"],
+        "Hitabet":["63 , 66 kadar"],
+        "Akaid":[],
+        "Arapca":[],
+        "Tefsir":[],
+        "Ingilizce":[],
+        "Kimya":[],
+        "Tarih":[],
+        "Turkce":[],
+        "Biyoloji":[],
+        "Fizik":[],
+        "Matematik":[],
+        "Felsefe":["13"]
+    }
+}

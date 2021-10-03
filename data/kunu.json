@@ -1,0 +1,82 @@
+{
+    "dersler": {
+        "Kuran": {
+            "sure": [
+                "sayfa 260 ezber"
+            ]
+        },
+        "Hitabet": {
+            "din hizmetleri": {},
+            "din hizmetlerini zorlastiran sorunlar": {},
+            "din hizmetlerinde hedef kitle": {},
+            "din hizmetlerinde iletisim": {}
+        },
+        "Akaid": {},
+        "Arapca": {},
+        "Tefsir": {},
+        "Ingilizce": {
+            "future tense": {},
+            "will affirmative": {},
+            "affirmative": {},
+            "negative": {},
+            "question": {},
+            "prepositions": {}
+        },
+        "Kimya": {
+            "atomun kuantum modeli": {},
+            "periyodik sistem ve elektron dizilimleri": {},
+            "peryodik ozellikler": {},
+            "elementleri taniyalim": {},
+            "yukseltgenme basamaklari": {},
+            "gazlarin ozellikleri ve gaz yasalari": {},
+            "ideal gaz yasasi": {},
+            "gazlarda kinetik teori": {},
+            "gaz karisimlari": {},
+            "gercek gazlar": {}
+        },
+        "Tarih": {
+            "1595-1700 yillari arasindaki siyasi gelismeler": {},
+            "uzun savaslardan diplomasiye": {},
+            "avrupada din savaslarindan modern devlete": {},
+            "xvii ve xviii. yuzyillarda osmanli develti'nde ve avrupada denizcilik faaliyetleri": {},
+            "fetihlerden savunmaya": {},
+            "olcme ve degerlendirme": {},
+            "avrupada degisim cagi": {},
+            "osmanli devletinde degisim": {},
+            "osmanli devletinde isyanlar ve duzeni koruma cabalari": {},
+            "olcme ve degerlendirme2": {},
+            "xviii-xx. yuzyil diysdi gelismeleri (1774-1914)": {},
+            "osmanli topraklarini paylasma mucadelesi": {},
+            "mehmet ali pasanin guc kazanmasi": {},
+            "osmanli-rusya rekabeti(1768-1914)": {},
+            "olcme ve degerlendirme3": {}
+        },
+        "Turkce": {
+            "okuma": {},
+            "yazma": {},
+            "sozlu iletisim": {},
+            "okuma2": {},
+            "yazma2": {},
+            "sozlu iletisim2": {}
+        },
+        "Biyoloji": {
+            "denetleyici ve duzenleyici sistem, duyu organlari": {},
+            "destek ve hareket sistemi": {},
+            "sindirim sistemi": {}
+        },
+        "Fizik": {
+            "vektorler": {},
+            "bagilharekete": {}
+        },
+        "Matematik": {
+            "trigonometri": {
+                "yonlu acilar": {},
+                "trigonometrik fonksiyonlar": {}
+            },
+            "analitik geometri": {
+                "dogrunun analitik incelenmesi": {}
+            }
+        },
+        "Felsefe": {}
+    }
+}
