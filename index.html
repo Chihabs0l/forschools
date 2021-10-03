@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>forschool</title>
+</head>
+<body>
+
+    <h1>Ezber sistemi</h1>
+    
+    <br>
+
+    <h3>Ezber Tablosu</h3>
+    <table id="table">
+
+    </table>
+
+    <br>
+
+    <h3>Sayfa</h3>
+
+    <br>
+
+    <table id="table2">
+        
+    </table>
+
+    <br>
+
+    <h3>Kunu</h3>
+
+    <br>
+
+    <table id="table3">
+        
+    </table>
+
+    <!--form for insert-->
+
+    <br>
+    <br>
+
+    <div>
+        <table>
+            <form action="/InsertDataTable=true" method="POST">
+                <h3>Tablo edit</h3>
+                <tr>
+                    <th>ders</th>
+                    <th>ekleceniz tablo</th>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="select" id="select-item">
+                        </select>
+                    </td>
+                    <td>
+                        <input name="userinput" type="text" placeholder="tablo ekle" id="tablo-ekleinput">
+                        <button id="tablo-ekle">Ekle</button>
+                    </td>
+                </tr>
+            </form>
+        </table>
+
+        <br>
+
+        <table>
+                <h4>Sil</h4>
+                <tr>
+                    <th>ders</th>
+                    <th>sileceniz tablo</th>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="select1" id="select-item2" onchange="data()"></select>
+                    </td>
+                    <td>
+                        <select name="userinput1" id="select-sil1" type="text" placeholder="tablo sil"></select>
+                        <button onclick="listenOnClick()">Sil</button>
+                    </td>
+                </tr>
+        </table>
+    </div>
+
+    <br>
+    <br>
+
+    <div>
+        <table>
+            <form action="/InsertDataSyafa=true" method="POST">
+                <h3>Sayfa edit</h3>
+                <tr>
+                    <th>ders</th>
+                    <th>ekleceniz syfa</th>
+                </tr>
+                <tr>
+                    <td><select name="select2" id="select-item3"></select></td>
+                    <td><input name="userinput2" type="text" placeholder="syfa ekle"> <button onclick="">Ekle</button></td>
+                </tr>
+            </form>
+        </table>
+        <table>
+            <form action="/DeleteDataSyafa=true" method="DELETE">
+                <h4>Sil</h4>
+                <tr>
+                    <th>ders</th>
+                    <th>sileceniz syfa</th>
+                </tr>
+                <tr>
+                    <td><select name="select3" id="select-item4" onchange="data1()"></select></td>
+                    <td><select name="userinput3" id="revselect" type="text" placeholder="syfa sil"></select><button onclick="">Sil</button></td>
+                </tr>
+            </form>
+        </table>
+
+    </div>
+
+    <br>
+    <br>
+
+    <div>
+        <table>
+            <form action="/InsertDataKunu=true" method="POST">
+                <h3>Kunu edit</h3>
+                <tr>
+                    <th>ders</th>
+                    <th>ekleceniz kunu</th>
+                </tr>
+                <tr>
+                    <td><select name="select4" id="select-item5"></select></td>
+                    <td><input name="userinput4" type="text" placeholder="kunuya ekle"> <textarea name="message4" placeholder="açiklama" cols="30" rows="4"></textarea> <button onclick="">Ekle</button></td>
+                </tr>
+            </form>
+        </table>
+        <table>
+            <form action="/DeleteDataKunu=true">
+                <h4>Sil</h4>
+                <tr>
+                    <th>ders</th>
+                    <th>sileceniz kunu</th>
+                </tr>
+                <tr>
+                    <td><select name="select5" id="select-item6" onchange="data2()"></select></td>
+                    <td><select name="userinput5" id="revselect2" type="text" placeholder="kunuya sil"></select><button onclick="">Sil</button></td>
+                </tr>
+            </form>
+        </table>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <script src="./script.js"></script>
+</body>
+</html>
