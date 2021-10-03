@@ -3,7 +3,7 @@
 top start ther server!
 
 ```bash
-npm run devStart
+npm start
 ```
 top build app!
 
