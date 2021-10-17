@@ -17,3 +17,13 @@ function lambda(x) {
 lambda(2)(4)
 
 ```
+
+```cmd
+@echo off
+
+if %1 == -al (
+  echo cmd
+  echo srting;
+)
+
+```
